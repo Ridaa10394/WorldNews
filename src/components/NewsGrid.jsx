@@ -4,7 +4,7 @@ import {motion } from 'framer-motion'
 function NewsGrid({ country }) {
   const categories = ["business", "entertainment", "health", "science", "sports", "technology"];
   const [articles, setArticles] = useState({});
-  const API_KEY="42a275162bf048ea8761988c2fdec181"
+  const API_KEY="ef62a20983a4438d8f22c18997b81089"
 
   useEffect(() => {
     categories.forEach(async (category) => {
