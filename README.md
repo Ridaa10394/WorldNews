@@ -1,12 +1,105 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🌍 World News - React News Aggregator
 
-Currently, two official plugins are available:
+A clean, responsive news app built with **React**, **Tailwind CSS**, and **Framer Motion**. Users can view the latest news by category and country, powered by the [NewsAPI](https://newsapi.org/).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+### 🔗 Live Demo
+> [**Deploy on Netlify / Vercel and paste the link here**]
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### ✨ Features
+
+- 🌐 **Country Selector**: Select a country to view localized news
+- 📰 **Category-Based News**: News displayed by categories (Business, Entertainment, Health, Science, Sports, Technology)
+- 🪄 **Smooth Animations**: Transitions powered by Framer Motion for smooth and interactive UI
+- 💬 **Article Modal**: View detailed news in a modal with title, description, and a "Read More" link
+- 🎨 **Responsive Design**: Mobile, tablet, and desktop-friendly UI using Tailwind CSS
+- 🧠 **Graceful Fallback**: Shows placeholder if no articles are available for a category
+- ✅ **Clean UI**: Tailwind CSS for easy-to-read and attractive layout
+
+---
+
+### 💪 Tech Stack
+
+- **React** (with Hooks)
+- **Tailwind CSS**
+- **Framer Motion** for animations
+- **NewsAPI** for live news data
+
+---
+
+### 🗂 Project Structure
+
+```bash
+src/
+├── components/
+│   ├── CountryDropdown.jsx
+│   ├── NewsCard.jsx
+│   └── NewsGrid.jsx
+├── App.jsx
+├── index.css
+└── main.jsx
+```
+
+---
+
+### 🥮 How to Run Locally
+
+1. **Clone the repo**
+   ```bash
+   git clone https://github.com/ridaa10394/WorldNews.git
+   cd world-news
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   ```
+
+3. **Add your NewsAPI key**
+   Create a `.env` file in the root:
+   ```
+   REACT_APP_API_KEY=ef62a20983a4438d8f22c18997b81089
+   ```
+
+4. **Start the app**
+   ```bash
+   npm start
+   ```
+
+---
+
+### ✅ Project Goals Coverage
+
+| Requirement                         | ✅ Status    |
+|------------------------------------|-------------|
+| React + Functional Components      | ✅ Done      |
+| Tailwind CSS                       | ✅ Done      |
+| Framer Motion                      | ✅ Done      |
+| API Integration                    | ✅ Done      |
+| Responsive Layout                  | ✅ Done      |
+| Props, State, Conditional Rendering| ✅ Done      |
+| Reusable Components                | ✅ Done      |
+| Modal Functionality                | ✅ Done      |
+| State Management (useState)        | ✅ Done      |
+| Deployment                         | 🔜 *(Deploy soon)* |
+| README.md                          | ✅ Done 💪 |
+
+---
+
+### 📤 Deployment Options
+
+- [Netlify](https://netlify.com/)
+- [Vercel](https://vercel.com/)
+- GitHub Pages (if converted to static)
+
+---
+
+### 👨‍💻 Author
+
+**Ridaa Mahrooz Mirza**  
+📧 ridaa.24bcs10394@sst.scaler.com 
+📍 [Banglore]
