@@ -9,7 +9,9 @@ function NewsGrid({ country }) {
   useEffect(() => {
     categories.forEach(async (category) => {
       try {
-        const res = await fetch(`/api/news?category=${category}&country=${country}`);
+        const res = await fetch(
+          `https://newsapi.org/v2/everything?q=${country}+${category}&language=en&sortBy=publishedAt&apiKey=${API_KEY}`
+        );
         const data = await res.json();
         setArticles((prev) => ({ ...prev, [category]: data.articles[0] }));
       } catch (error) {
